@@ -17,3 +17,14 @@ axiosClient.interceptors.request.use(async (config) => {
     },
   };
 });
+
+axiosClient.interceptors.response.use(
+  (response) => {
+    return response;
+  },
+  (err) => {
+    throw err.response;
+  }
+);
+
+export default axiosClient;
