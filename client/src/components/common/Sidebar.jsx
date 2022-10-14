@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
+import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
 
 const Sidebar = () => {
   return (
@@ -31,7 +32,40 @@ const Sidebar = () => {
               Nona
             </Typography>
             <IconButton>
-              <LogoutOutlinedIcon></LogoutOutlinedIcon>
+              <LogoutOutlinedIcon />
+            </IconButton>
+          </Box>
+        </ListItemButton>
+        <Box sx={{ paddingTop: "10px" }}></Box>
+        <ListItemButton>
+          <Box
+            sx={{
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <Typography variant="body2" fontWeight="700">
+              お気に入り
+            </Typography>
+          </Box>
+        </ListItemButton>
+        <Box sx={{ paddingTop: "10px" }}></Box>
+        <ListItemButton>
+          <Box
+            sx={{
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <Typography variant="body2" fontWeight="700">
+              プライベート
+            </Typography>
+            <IconButton>
+              <AddBoxOutlinedIcon fontSize="small" />
             </IconButton>
           </Box>
         </ListItemButton>
