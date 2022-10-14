@@ -9,6 +9,7 @@ import {
 import { Box } from "@mui/system";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
+import assets from "../../assets/index";
 
 const Sidebar = () => {
   return (
@@ -18,7 +19,13 @@ const Sidebar = () => {
       open={true}
       sx={{ width: 250, height: "100vh" }}
     >
-      <List sx={{ width: 250, height: "100vh" }}>
+      <List
+        sx={{
+          width: 250,
+          height: "100vh",
+          backgroundColor: assets.colors.secondary,
+        }}
+      >
         <ListItemButton>
           <Box
             sx={{
