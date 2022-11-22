@@ -14,7 +14,6 @@ function EmojiPicker(props) {
   const showPicker = () => setIsShowPicker(!isShowPicker);
 
   const selectEmoji = (e) => {
-    console.log(e);
     const emojiCode = e.unified.split("-");
     console.log(emojiCode);
     let codesArray = [];
@@ -22,6 +21,7 @@ function EmojiPicker(props) {
     const emoji = String.fromCodePoint(...codesArray);
     console.log(emoji);
     setIsShowPicker(false);
+    props.onChange(emoji);
   };
 
   return (
